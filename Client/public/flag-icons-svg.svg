@@ -1,0 +1,46 @@
+<svg viewBox="0 0 600 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Bahamas Flag Icon -->
+  <g transform="translate(0, 0)">
+    <circle cx="50" cy="50" r="45" fill="#3A7DC8" />
+    <rect x="50" y="5" width="45" height="90" fill="#FFD64D" />
+    <polygon points="5,50 50,5 50,95" fill="black" />
+  </g>
+  
+  <!-- UK Flag Icon -->
+  <g transform="translate(120, 0)">
+    <circle cx="50" cy="50" r="45" fill="#FFFFFF" />
+    <path d="M50,5 L50,95 M5,50 L95,50" stroke="#CF142B" stroke-width="15" />
+    <path d="M5,5 L95,95 M95,5 L5,95" stroke="#CF142B" stroke-width="7" />
+    <path d="M50,5 L50,95 M5,50 L95,50" stroke="#FFFFFF" stroke-width="9" />
+    <path d="M5,5 L95,95 M95,5 L5,95" stroke="#FFFFFF" stroke-width="3" />
+    <path d="M50,5 L50,95 M5,50 L95,50" stroke="#00247D" stroke-width="6" />
+  </g>
+  
+  <!-- Australia Flag Icon -->
+  <g transform="translate(240, 0)">
+    <circle cx="50" cy="50" r="45" fill="#00008B" />
+    <path d="M30,25 L70,50 L30,75" fill="none" stroke="white" stroke-width="3" />
+    <circle cx="50" cy="50" r="15" fill="none" stroke="white" stroke-width="3" />
+    <path d="M50,20 L54,33 L68,33 L57,41 L61,54 L50,46 L39,54 L43,41 L32,33 L46,33 Z" fill="white" stroke="none" />
+    <circle cx="75" cy="25" r="5" fill="white" />
+  </g>
+  
+  <!-- Seychelles Flag Icon -->
+  <g transform="translate(360, 0)">
+    <circle cx="50" cy="50" r="45" fill="#FFFFFF" />
+    <path d="M5,95 L95,95 L95,5 Z" fill="#D92223" />
+    <path d="M5,95 L95,35 L95,5 Z" fill="#FCD955" />
+    <path d="M5,95 L95,50 L95,5 Z" fill="#003D88" />
+    <path d="M5,95 L55,95 L95,5 Z" fill="#007A3A" />
+  </g>
+  
+  <!-- South Africa Flag Icon -->
+  <g transform="translate(480, 0)">
+    <circle cx="50" cy="50" r="45" fill="#FFFFFF" />
+    <path d="M5,20 L95,20 L95,80 L5,80 Z" fill="#E03C31" stroke="white" stroke-width="2" />
+    <path d="M5,35 L95,35 L95,65 L5,65 Z" fill="#001489" stroke="white" stroke-width="2" />
+    <path d="M5,50 L95,50" stroke="#007749" stroke-width="10" />
+    <path d="M5,50 L95,50" stroke="#FFB81C" stroke-width="8" />
+    <path d="M5,20 L50,50 L5,80 Z" fill="black" />
+  </g>
+</svg>

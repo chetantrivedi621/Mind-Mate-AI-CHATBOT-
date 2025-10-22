@@ -1,0 +1,59 @@
+<svg viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffd89b" />
+      <stop offset="100%" stop-color="#ff9a5e" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Sky background -->
+  <rect width="1200" height="300" fill="url(#skyGradient)" />
+  
+  <!-- Hills in the distance -->
+  <path d="M0,300 L0,200 C50,180 100,190 150,170 C200,150 250,140 300,145 C350,150 400,180 450,170 C500,160 550,145 600,150 C650,155 700,175 750,170 C800,165 850,145 900,140 C950,135 1000,145 1050,160 C1100,175 1150,185 1200,180 L1200,300 Z" 
+        fill="#4b6043" opacity="0.8" />
+        
+  <!-- Middle hills -->
+  <path d="M0,300 L0,220 C60,200 120,220 180,210 C240,200 300,190 360,200 C420,210 480,230 540,225 C600,220 660,200 720,195 C780,190 840,210 900,220 C960,230 1020,215 1080,205 C1140,195 1200,210 1200,220 L1200,300 Z" 
+        fill="#618a4f" opacity="0.9" />
+        
+  <!-- Foreground hills -->
+  <path d="M0,300 L0,240 C70,230 140,250 210,245 C280,240 350,230 420,235 C490,240 560,260 630,255 C700,250 770,235 840,230 C910,225 980,240 1050,250 C1120,260 1190,245 1200,240 L1200,300 Z" 
+        fill="#7fb069" />
+        
+  <!-- Small village on hills -->
+  <g transform="translate(400, 230) scale(0.5)">
+    <rect x="0" y="0" width="20" height="30" fill="#d3b88c" />
+    <polygon points="0,0 20,0 10,-15" fill="#a32c27" />
+    
+    <rect x="30" y="5" width="15" height="25" fill="#e3c9a0" />
+    <polygon points="30,5 45,5 37.5,-8" fill="#a32c27" />
+    
+    <rect x="55" y="-5" width="25" height="35" fill="#d3b88c" />
+    <polygon points="55,-5 80,-5 67.5,-25" fill="#a32c27" />
+    
+    <rect x="90" y="0" width="18" height="30" fill="#e3c9a0" />
+    <polygon points="90,0 108,0 99,-12" fill="#a32c27" />
+  </g>
+  
+  <g transform="translate(650, 240) scale(0.4)">
+    <rect x="0" y="0" width="20" height="30" fill="#d3b88c" />
+    <polygon points="0,0 20,0 10,-15" fill="#a32c27" />
+    
+    <rect x="30" y="5" width="15" height="25" fill="#e3c9a0" />
+    <polygon points="30,5 45,5 37.5,-8" fill="#a32c27" />
+    
+    <rect x="55" y="-5" width="25" height="35" fill="#d3b88c" />
+    <polygon points="55,-5 80,-5 67.5,-25" fill="#a32c27" />
+  </g>
+  
+  <!-- Sun -->
+  <circle cx="900" cy="80" r="60" fill="#ffd587" />
+  <circle cx="900" cy="80" r="50" fill="#ffb350" />
+  
+  <!-- Text overlay -->
+  <g transform="translate(600, 150)">
+    <text x="0" y="0" font-family="Arial" font-size="30" font-weight="bold" text-anchor="middle" fill="white" stroke="#000" stroke-width="1" opacity="0.9"></text>
+    <text x="0" y="40" font-family="Arial" font-size="16" text-anchor="middle" fill="white" stroke="#000" stroke-width="0.5" opacity="0.9"></text>
+  </g>
+</svg>

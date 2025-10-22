@@ -1,0 +1,50 @@
+/* Navbar Container */
+.navbar {
+    background-color: #343a40; 
+    color: white;
+    padding: 1rem;
+  }
+  
+  /* Brand Name or Logo */
+  .navbar-brand {
+    font-size: 1.5rem; 
+    font-weight: bold;
+    color: white;
+    text-decoration: none; 
+  }
+  
+  .navbar-brand:hover {
+    color: #007bff;
+  }
+  
+  /* Navigation Links Container */
+  .navbar-links {
+    display: flex; 
+  }
+  
+  /* Individual Links */
+  .navbar-link {
+    margin-right: 1rem; 
+    color: white;
+    text-decoration: none; 
+    font-size: 1rem; 
+  }
+  
+  .navbar-link:hover {
+    color: #007bff; 
+  }
+  
+  /* Responsive Design for Small Screens */
+  @media (max-width: 768px) {
+    .navbar-links {
+      flex-direction: column; /* Stack links vertically on small screens */
+      align-items: center;
+      margin-top: 1rem;
+    }
+  
+    .navbar-link {
+      margin-right: 0; /* Remove horizontal spacing */
+      margin-bottom: 0.5rem; /* Add vertical spacing between links */
+    }
+  }
+  

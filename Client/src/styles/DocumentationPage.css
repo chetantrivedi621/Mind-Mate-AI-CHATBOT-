@@ -1,0 +1,670 @@
+.documentation-page {
+  min-height: 100vh;
+  background: #f8f9fa;
+  font-family: 'Inter', sans-serif;
+  color: #333;
+}
+
+/* Hero Banner */
+.doc-hero-banner {
+  background-image: url('/hill-view-banner.svg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.doc-hero-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.doc-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.doc-hero-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.doc-hero-content p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Category Navigation */
+.doc-category-nav {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.doc-category-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  overflow-x: auto;
+  padding: 0 10px;
+}
+
+.doc-category-nav button {
+  padding: 15px 20px;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  white-space: nowrap;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.doc-category-nav button:hover {
+  color: #0066cc;
+}
+
+.doc-category-nav button.active {
+  color: #0066cc;
+  font-weight: 600;
+}
+
+.doc-category-nav button.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  width: 60%;
+  height: 3px;
+  background-color: #0066cc;
+}
+
+/* Documentation Container */
+.documentation-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+  gap: 2rem;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  position: sticky;
+  top: 70px;
+  height: fit-content;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
+  color: #0066cc;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 0.5rem;
+}
+
+.sidebar a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.sidebar a:hover {
+  background: #f8f9fa;
+  color: #0066cc;
+}
+
+.sidebar a.active {
+  background: #e6f0ff;
+  color: #0066cc;
+  font-weight: 500;
+}
+
+/* Content */
+.content {
+  flex: 1;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Styles */
+.doc-section {
+  margin-bottom: 4rem;
+}
+
+.section-header {
+  margin-bottom: 1.5rem;
+}
+
+.section-header h2 {
+  color: #111;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.section-divider {
+  height: 4px;
+  width: 60px;
+  background-color: #0066cc;
+  border-radius: 2px;
+}
+
+.doc-section h3 {
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1.5rem 0 1rem;
+}
+
+.doc-section h4 {
+  color: #444;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 1rem 0 0.5rem;
+}
+
+.doc-section p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Feature Cards */
+.feature-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.feature-card {
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Architecture Section */
+.architecture-diagram {
+  margin: 2rem 0;
+}
+
+.arch-layer {
+  margin-bottom: 1rem;
+}
+
+.arch-box {
+  background-color: #e6f0ff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.arch-box h4 {
+  margin-bottom: 0.5rem;
+  color: #0066cc;
+}
+
+.arch-connector {
+  height: 40px;
+  width: 2px;
+  background-color: #0066cc;
+  margin: 0 auto;
+}
+
+.layered-list {
+  margin-top: 1.5rem;
+}
+
+.layer-item {
+  background-color: #f8f9fa;
+  border-left: 4px solid #0066cc;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 0 8px 8px 0;
+}
+
+.layer-item h4 {
+  margin-bottom: 0.5rem;
+  color: #0066cc;
+}
+
+.layer-item p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Components Section */
+.components-container {
+  margin-top: 2rem;
+}
+
+.component-group {
+  margin-bottom: 2.5rem;
+}
+
+.component-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.component-card {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.component-title {
+  background-color: #0066cc;
+  color: white;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+}
+
+.component-details {
+  padding: 1rem;
+}
+
+.component-details ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.component-details li {
+  margin-bottom: 0.5rem;
+}
+
+.component-details p {
+  margin: 0;
+}
+
+/* Workflow Section */
+.workflow-container {
+  margin-top: 2rem;
+}
+
+.workflow-steps {
+  margin: 2rem 0;
+}
+
+.workflow-step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.step-number {
+  background-color: #0066cc;
+  color: white;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.step-content {
+  margin-left: 1rem;
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  flex-grow: 1;
+}
+
+.workflow-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.workflow-card {
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.workflow-card h3 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.highlight-bullet {
+  color: #0066cc;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.workflow-card ul {
+  list-style: none;
+  padding-left: 0.5rem;
+}
+
+.workflow-card li {
+  margin-bottom: 0.75rem;
+}
+
+/* API Section */
+.api-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.api-card {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.api-card:hover {
+  transform: translateY(-5px);
+}
+
+.api-header {
+  background-color: #0066cc;
+  color: white;
+  padding: 1.25rem;
+}
+
+.api-header h3 {
+  margin: 0;
+  color: white;
+}
+
+.api-body {
+  padding: 1.5rem;
+}
+
+.api-body pre {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  overflow-x: auto;
+}
+
+.api-body code {
+  font-family: 'Consolas', 'Monaco', monospace;
+}
+
+/* Customization Section */
+.custom-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.custom-feature {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.custom-feature:hover {
+  transform: translateY(-5px);
+}
+
+.custom-feature .feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.custom-feature h3 {
+  margin-bottom: 0.75rem;
+}
+
+.custom-feature p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* Deployment Section */
+.deployment-options {
+  margin-top: 2rem;
+}
+
+.deployment-group {
+  margin-bottom: 2.5rem;
+}
+
+.deployment-platforms {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.platform-card {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: background-color 0.3s;
+}
+
+.platform-card:hover {
+  background-color: #e6f0ff;
+}
+
+.platform-card h4 {
+  color: #0066cc;
+  margin-bottom: 0.75rem;
+}
+
+.platform-card p {
+  color: #666;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Best Practices Section */
+.best-practices-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.practice-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.practice-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.practice-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.practice-card h3 {
+  color: #333;
+  margin-bottom: 0.75rem;
+}
+
+.practice-card p {
+  color: #666;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Summary Section */
+.summary-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.cta-button {
+  background-color: #0066cc;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #004d99;
+}
+
+.cta-link {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.cta-link:hover {
+  color: #004d99;
+  text-decoration: underline;
+}
+
+/* Footer */
+.doc-footer {
+  background-color: #333;
+  color: white;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.doc-footer p {
+  margin: 0;
+  opacity: 0.8;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .feature-cards,
+  .workflow-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .doc-hero-content h1 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .documentation-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .sidebar {
+    width: 100%;
+    position: static;
+    margin-bottom: 1.5rem;
+  }
+
+  .doc-hero-banner {
+    height: 250px;
+  }
+  
+  .doc-hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .component-list,
+  .best-practices-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .doc-hero-content h1 {
+    font-size: 1.8rem;
+  }
+  
+  .doc-category-nav button {
+    padding: 12px 15px;
+    font-size: 0.9rem;
+  }
+  
+  .section-header h2 {
+    font-size: 1.6rem;
+  }
+  
+  .summary-cta {
+    flex-direction: column;
+  }
+}

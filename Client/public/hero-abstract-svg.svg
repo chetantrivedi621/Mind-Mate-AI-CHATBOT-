@@ -1,0 +1,40 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6B35" />
+      <stop offset="100%" stop-color="#F2594B" />
+    </linearGradient>
+    <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4361EE" />
+      <stop offset="100%" stop-color="#3A0CA3" />
+    </linearGradient>
+    <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7209B7" />
+      <stop offset="100%" stop-color="#560BAD" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background wavy lines -->
+  <path d="M0,120 C60,100 120,170 180,150 C240,130 300,190 360,170 C420,150 480,200 540,180" 
+        stroke="#EAEAEA" stroke-width="25" fill="none" />
+  <path d="M0,160 C60,140 120,210 180,190 C240,170 300,230 360,210 C420,190 480,240 540,220" 
+        stroke="#F3F3F3" stroke-width="20" fill="none" />
+  
+  <!-- Colorful elements -->
+  <path d="M60,40 C90,10 140,10 170,40 C200,70 200,130 170,160 C140,190 90,190 60,160 C30,130 30,70 60,40" 
+        fill="url(#gradient1)" opacity="0.9" />
+  
+  <rect x="240" y="60" width="130" height="130" rx="20" 
+        fill="url(#gradient2)" opacity="0.8" transform="rotate(15, 305, 125)" />
+  
+  <polygon points="140,230 180,180 220,230 180,280" 
+           fill="url(#gradient3)" opacity="0.7" />
+  
+  <circle cx="320" cy="220" r="40" 
+          fill="#4CC9F0" opacity="0.6" />
+  
+  <!-- Accent lines -->
+  <line x1="50" y1="100" x2="200" y2="100" stroke="#FF6B35" stroke-width="6" stroke-linecap="round" />
+  <line x1="280" y1="40" x2="350" y2="40" stroke="#4361EE" stroke-width="6" stroke-linecap="round" />
+  <line x1="240" y1="250" x2="350" y2="250" stroke="#7209B7" stroke-width="6" stroke-linecap="round" />
+</svg>
